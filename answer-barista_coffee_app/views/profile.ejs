@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <!-- <span class="barista"> Barista:</span>
+  <span id="barista"><%= user.local.email %></span> -->
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      <div class="orderSec">
+          <div class="col-sm-6">
+            <h3>Orders in Queue</h3>
+
+            <!-- <ul class="messages"> -->
+            <ul class="orders list-unstyled">
+              <% for(var i=0; i <orders.length; i++) {%>
+                <!-- <li class="message"></li> -->
+                <li class="orderUp order">
+                    <span>Customer Name:</span>
+                  <span><%= orders[i].name %></span>
+                  <p>Order: <%= orders[i].order %></p>
+                  <span class="hide"><%= orders[i].completed %></span>
+                  <span class="hide"><%= orders[i]._id %></span>
+                  <p><button type="submit" value="barista" class="btn btn-primary btn-sm completed">Completed</button</p>
+                </li>
+                <!-- <span><%= messages[i].name %></span>
+                <span><%= messages[i].msg %></span>
+                <span><%= messages[i].thumbUp %></span>
+                <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+                <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+                <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+              </li> -->
+            <% } %>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+              <h3>Orders Completed</h3>
+              <ul class="orders list-unstyled">
+                <% for(var i=0; i <completed.length; i++) {%>
+                  <li class="completedOrders order box-bottom-shadow">
+                    <p>Barista: <%= completed[i].barista%></p>
+                    <p>Customer Name: <%= completed[i].name %></p>
+                    <span>Order: <%= completed[i].order %></span>
+                    <span class="hide"><%= completed[i]._id %></span>
+                    <span class="hide"><%= completed[i].completed %></span>
+                    <p><button type="submit" value="clear" class="btn btn-primary btn-sm clear">Clear</button</p>
+                  
+                    <!-- <% if (user.local.email) { %> -->
+                    <!-- <form action="/messages" method="POST">
+                    <input type="text" value="<%= user.local.email %>" name="name">
+                    <input type="text" placeholder="message" name="msg">
+                    <button type="submit">Submit</button>
+                    </form> -->
+
+
+                  </li>
+                  <% } %>
+                </ul>  
+          
+            </div>
+           
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+       <!-- <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div> -->   
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

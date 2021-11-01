@@ -1,0 +1,74 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: url('img/Coffee-background.jpeg');
+  background-size: cover;
+  align-items: center;
+}
+.btn btn-default btn-sm{
+  padding-bottom: 15em;
+}
+img{
+  height: 200px;
+}
+
+.container{
+  background-color: navajowhite;
+  opacity: 1;
+  height: 100%;
+  }
+
+.drinks{
+clear:both;
+margin-bottom: 2em;
+}
+
+ul {
+  align-items: center;
+  width: 100%;
+}
+
+li{
+  width: 20%;
+  height: 200px;
+  float: left;
+  border: 1px solid black;
+  list-style: none;
+  padding: 20px;
+  font-size: 18px;
+}
+.orderSec{
+  margin-top: 15px;
+}
+
+.col-sm-6{
+  margin-top: 15px;
+  width: 50%;
+  float: left;
+}
+button{
+  background-color: saddlebrown;
+}
+
+
+.btn-primary,  .btn-primary:active, .btn-primary:visited {
+  background-color: saddlebrown;
+  display:inline-block;
+  padding: 0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:navajowhite;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover{
+  background-color: maroon;
+}
