@@ -7,3 +7,12 @@ This is a web application that allows a coffee house barista to add a customer o
 
 Tech Used:
 HTML, CSS, JS, API, JSON, NODE.JS, EXPRESS, MONGODB, USER AUTH
+
+----------------------------------
+Installation
+Clone repo
+run npm install
+
+Usage
+run node server.js
+Navigate to localhost:8010
